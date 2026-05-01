@@ -236,11 +236,6 @@ def upload():
 
     prediction = predict(newDes)
     print(prediction)
-    APP_KEY = '2ac225cf90201e1e8fb696d3352f5f8a'	
-    APP_ID = '4a8e817b'
-    URL = 'https://api.edamam.com/search?q='+train_categories[top_pred[0][-1]]+'&app_id='+APP_ID+'&app_key='+APP_KEY+'&from=0&to=5'
-    # URL = 'http://192.168.100.192:8002/api/v1/recipe/search?name=banan'
-
     data={}
     print(URL)
     headers = {"Accept": "application/json"}
